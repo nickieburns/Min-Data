@@ -1,0 +1,15 @@
+body {
+    background-color: #LightSalmon;
+    font-family: "Lucida Console", Monaco, monospace"
+}
+
+h1 {
+    color: #LightSlategrey;
+    font-style: bold;
+    margin-left: 20px;
+}
+
+h2 {
+    color:  #LightSeaGreen;
+    margin-left: 20px;
+}

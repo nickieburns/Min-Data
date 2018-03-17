@@ -1,3 +1,4 @@
-# blog_django
+# blog 
 
-a weblog displaying and describing my data science and data-driven software development studies journey which began January, 2017
+Language: Python
+Framework: Django
