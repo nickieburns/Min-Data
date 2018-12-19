@@ -1,4 +1,4 @@
 # blog 
 
 This is a simple blog written in Python, using the Django Framework,
-and will eventually become a digital scrapbook of my tech journey. 
+that describes what I have learned in the past two years, studying data science. 
