@@ -15,13 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.generic import RedirectView
 from . import views
 
 urlpatterns = [
+
     url(r'^admin/', admin.site.urls),
-    url(r'^tutorials/', include('tutorials.urls')),
-    url(r'^projects/', include('projects.urls')),
-    url(r'^timeline/', include('timeline.urls')),
-    url(r'^about/$', views.about),
-	url(r'^$', views.homepage),
+	url(r'^favicon\.ico$',RedirectView.as_view(url='/static/images/favicon.ico')),
+	
+    url(r'^essay/', include('essay.urls')),
+    url(r'^jupyterNb/', include('jupyterNb.urls')),
+	
+	url(r'^about/$', views.about),
+    url(r'^$', views.homepage),
 ]

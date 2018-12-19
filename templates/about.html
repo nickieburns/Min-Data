@@ -1,11 +1,371 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <h1>about</h1>
-    <p>This is my django blog.</p>
+    <h1><u>min(data):</u>
+	a simple data blog :)</h1>
+	<p></p>
+	<p>Hi, I'm Nickie and I am learning data science. This is what I have learned so far. </p>
+	<i>note: this blog assumes some computer science knowledge. Specifically does not speak about the
+	process of installations, or get too specific about certain software. One of the most important skills 
+	I've learned with regards this industry is the importance of the ability to use Google, so have
+	at it!</i>
+	<h2 id='int'>0| 	INTRO	|</h2>
+	<p></p>
+<p>What is data?? You have all heard of the term data, and indeed we talk about and hear stories about it 
+often. But what reallyis "data" and why is it such a modern buzz word? In this blog, I talk about script data,
+as I have not yet learned anything about video, image, or other types of data. The type of data discussed here
+is data that is used with word processing or numerical calculation applications of computers. Other types of 
+data could be imagery and sound; I know nothing of these formats!
+<p></p>
+<h3 id='int1'>0.1 data vs information</h3>
+<p>A good way to start thinking about data is to think metaphorically about a cake. Before the cake is made, 
+we have all of the ingredients: we have the butter, the milk, the baking powder, etc. These ingredients are 
+like raw pieces of data. Once we put these raw pieces together in a very specific way, they create something
+else: a cake! This cake would represent information. Once data is put together in an elegant way
+it gives us meaningful information. Raw data on its own is often useless without some sort of context
+and/or formatting. For example, "the number 3" means nothing, without some sort of qualifier, so as "the 
+number3" on its own might be a piece of data, if we combine this with other pieces of data, we gain 
+information which might be, for example, "3 fish were fished out of the Mississippi River on June 13."</p>
+<p></p>
+<h3 id='int2'>0.2 basic/primitive data types of data elements</h3>
+<p> Each individual value in data are called elements. There are basic data types that most higher level 
+programming languages utilize, and are used to describe individual data values. Generally, these include 
+integers, decimals, boolean or logical type, and string or character type, the features of which are 
+described below, along with 3 examples of each.  <table>
+<table border="1" cellpadding="1">
+<tbody>
+<tr>
+<tbody>
+<tr>
+
+<th>type</th>
+<th>explanation</th>
+<th>ex. 1</th>
+<th>ex. 2</th>
+<th>ex. 3</th>
+
+</tr>
+<tr>
+<td>integer</td>
+<td>numbers with no decimal</td>
+<td>-4</td>
+<td>473</td>
+<td>3827</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>logical, true/false</td>
+<td>true</td>
+<td>T</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>numbers with a decimal</td>
+<td>4.23</td>
+<td>1/5</td>
+<td>2.3e-5</td>
+</tr>
+<tr>
+<td>string</td>
+<td>characters, lettering</td>
+<td>"foo"</td>
+<td>"bar"</td>
+<td>FOo BaR"</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<!-- fundamental/ basic/ built in --> 
+
+<!-- generic 	explanation					ex 1	ex 2	ex 3
+	integers	numbers with no decimal		-4		473		3827
+	boolean		aka logical or true/false	true	TRUE	F 
+	decimal		numbers with decimal		4.23	1/5		2.3e-5	
+	string		aka character or lettering	"foo"	"bar"	"FOoBaR"	 -->
+
+<!-- R 
+    character
+    numeric (real or decimal)
+    integer
+    logical
+    complex -->
+	
+<!-- Python
+	integers
+	floating-point
+	complex numbers
+	strings
+	boolean -->
+<!-- SQL
+	Exact numerics 	
+	Unicode character strings
+	Approximate numerics 	
+	Binary strings
+	Date and time 	
+	Other data types
+	Character strings -->
+	
+<!-- data kept in csv txt files -->
+
+<h3 id='int3'>0.3 basic data structuring</h3>
+<p> Data elements, regardless of data type, can be grouped together to form basic data structures. A
+simple way to think about it is to use an example from every day life: A grocery list, for example, is
+a grouping of items that you need from the grocery store. 
+
+<p><textarea>bananas
+milk
+turkey-sliced
+bagels
+cream cheese X 2
+</textarea></p>
+
+If we put this information into a computer, the list itself as a whole would be the data structure, and each
+individual item in that data structure would be a data element of the string data type, because it is a 
+series of alphanumeric characters that come together to form something easily understood in human language. 
+The most basic data structure is the array. <b><p>An ARRAY is a group of data elements.</p></b> Depending on
+the rules of the programming language, an array may or may not store different data types. So, in some 
+languages, the following data scientists worst nightmare would be fully sanctioned:
+
+<p><textarea>
+89
+cheeseballs
+pizza crust
+957.3
+false
+</textarea></p>
+A commonly used version of an array is <b>a LIST,</b> which <b>is often used synonymously with an array.</b> I have
+yet to really see any difference between these two types of data structures, other than with regards to how
+each individual programming language handles the name delegation of 'array' or 'list' and its associated rules.</p>
+
+<h4>Abstract Data Types</h4>
+
+<h5>Stack</h5>
+
+<p>(LIFO)</p>
+
+<h5>Linked List</h5>
+
+<p>	A linked list is ...</p>
+
+<h3 id='int4'>0.4 structured vs unstructured data</h3>
+<p>Data is stored in different formats. Data can be structured and unstructured. Structured 
+data is simple to work with, as you can probably tell from context. If something is structured, it is easy to read and 
+use. Examples of structured data are data stored in databases or repositories. This type of data is clean,
+and easy to use, and does not require too much manipulation to derive meaning. A goal of data science is
+to transform all data into a structured form, but most data nowadays does require some sort
+of processing before it can be considered structured.  The pervasive use of the internet and more recently 
+smartphone has created a substantial amount of unstructured data, which is commonly referred to as BIG DATA. 
+In todays technologic climate, unstructured data makes up most of the data in existence.</p>
+<p></p>
+<h3 id='int5'>0.5 data science</h3>
+<p> The ways we can most benefit society with all of this multitude of data we create every day (not to mention some of the most fun we 
+can have with it!) is to organize it, clean it, query it, manipulate it, visualize it, and create predictive
+models from it using statistics and machine learning techniques! For smaller data, a database is sufficient.  For larger data,
+more advanced techniques must be applied. In this blog I split data into "small data" and "big data". The majority of my focus
+is on big data as this is what I am most interested in. </p>
+<p></p>
+
+
+
+small data
+
+
+<h2 id='org'>1|	ORGANIZE	 |	relational databases</h2>
+
+<p>	Relational databases are ...</p>
+<h4>SQL to CREATE</h4>
+<p> SQL is one of the best ways to ...</p>
+
+<h2 id='que'>2|	QUERY	|	find answers</h2>
+
+intro to organize data query<br>
+click here to move to a section
+
+<h3 id='que1'>3.1 definitions</h3>
+<p></p>
+
+<h3 id='que2'>3.2 SQL SELECT</h3>
+<p></p>
+
+<h4> 3.3 SQL JOIN</b>
+
+
+
+big data
+
+
+<h2 id='mun'>3|	MUNGE	|	cleanup big data </h2>	
+
+<p>As expressed above, often data is unstructured. In this case, we need to put it in an order that makes sense as related to the task 
+at hand. This often requires some programming, and Python and R both have great libraries for doing so. In this section I'll use
+a mini dataset to simply illustrate how to manipulate much larger datasets that come in a similar format. I use code in Python
+and also, in many cases also use similar code in R. Before code is written, data manipulation libraries must be installed. For 
+this section, I use Pandas for Python, and Hmisc for R.</p>
+
+<p><i> Python</i><br><br>
+Installation: Pandas<br>
+command:<code> pip install pandas</code><p/>
+
+<p><i> R</i><br><br>
+Installation: Hmisc<br>
+command:<code>  > install.packages('Hmisc')</code><p/> 
+ 
+Click here to move to a section
+
+<h3 int='mun1'>2.1 CSV files into Data Frame Structure</h3>
+
+
+<p> Often data comes to us in csv form, that standing for "comma separated form." From context, you can probably tell 
+what this means (yet I still want to tell you): a list of data values, separated by commas. We can use Python or R to put this form of 
+raw data into a more useable form called a dataframe, which is similar to a table or a matrix. <br><br>Let's pretend this text box 
+represents a text file that has the file name <b>height.csv</b>. 
+
+<p><textarea>Wendy, 16, 5'10"
+Timothy, 17, 6'1"
+Karen, 15, 5'9"
+Roger, 18, </textarea></p>
+
+It's current form might be well and good if we were only dealing with 3 lines of data, but if this were say a 384753234 page 
+document, with each line being a new person's entry, we would definitely need to do some cleaning to make this data more useful.
+Because our original file does not have a header, we need to add column names, aka a header row. Of course make 
+sure your working directory includes the CSV file.</p>
+
+<i>Python</i>
+<pre>
+<code>1 import pandas as pd
+2
+3 height_cols = ['Name', 'Age', 'Height']
+4 heights = pd.read_csv('height.csv', names = height_cols)
+5 </code></pre>
+
+<i>R</i>
+<pre>
+<code> 
+> library(Hmisc)
+>
+> heights <- read.csv(file='height.csv')
+> colnames(heights) <- c('Name', 'Age', 'Height')
+> </code></pre>
+
+<p>The resulting Data Frame will look something like this, with different formatting depending on the language and the software
+you are using. This is an html table, but data frames in R and Python look very similar.
+
+<table>
+<tbody>
+
+<col align='left'>
+<tr>
+<tbody>
+<tr>
+<th align='left'>Name</th>
+<th align='left'>Age</th>
+<th align='left'>Height</th>
+</tr>
+<tr>
+<td>Wendy</td>
+<td>16 yo</td>
+<td>5'10"</td>
+</tr>
+<tr>
+<td>Timothy</td>
+<td>17 yo</td>
+<td>6'1"</td>
+</tr>
+<tr>
+<td>Karen</td>
+<td>15 yo</td>
+<td>5'9"</td>
+</tr>
+<tr>
+<td>Roger</td>
+<td>18 yo</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table></p>
+
+<h3 id='mun2'>2.2 Cleaning Data Frames</h3>
+
+Now that we have our data frame, we want to make sure that all of our values are in a useable form. We need
+to dive into what types of data we are dealing with. 
+
+<p>variable types: catetorical vs , correlations</p>
+
+<h4> Age Column Cleanup</h4>
+<p>The age column in our data frame is a little off. There is no reason for the letters "yo" to be placed after the age, as this
+is implied. Indeed it would hinder our use of this row to do any mathematical manipulations, or any sort of hierarchical
+sorting, or the like.
+
+<p><i> Python Pandas</i><br>
+</p>
+
+<h4> Height Column Cleanup</h4>
+<p>It would be useful, to have all of our height column values in inches, rather than in its current form. This way we can 
+easily order the heights hierarchically, for example in descending order.</p>
+
+<p><i> Python Pandas</i>
+
+</p>
+
+
+
+
+
+
+
+<h2 id='vis'>4|	VISUALIZE	|	</h2>
+
+intro to organize data organization<br>
+click here to move to a section
+
+<h3 id='vis1'>3.1 definitions</h3>
+<p></p>
+
+<h3 id='vis2'>3.2 Pivot Table</h3>
+<p>A pivot table is ...</p>
+
+<h3 id='vis3'>3.3 Histogram</h3>
+</p>A histogram is </p>
+
+<h3 id='vis4'>3.4 Scatter plot</h3>
+<p></p>
+
+
+
+
+
+
+<h2 id='mod'>5|	MODEL	|</h2>
+<h3>5.1 Determine relationships</h3>
+<br>correlation
+
+<h3>5.2 Choose a model</h3>
+<br>Linear Regression
+<br>K-means Clustering
+<br>Principal Component Analysis
+<br>
+<h3>5.3 
+
+
+<h3 id='mod1'> 5.1 background</h3>
+<p>define machine learning, variable types, correlations</p>
+
+<h4>5.1.2 normalization</h4>
+<p></p>
+
+<h4>5.1.2 standardization</h4>
+<h3 id='mod2'>5.2 
+
   </body>
 </html>
+
+<!-- Python Flask framework with Dash, D3.js in Javascript, and from the SDLC side, 
+I'd nail down some "exposure" to Scala (doesn't seem permeated the whole field yet). 
+Side-side note: be able to SQL JOIN and know the difference between iteration and recursion 
+-- last advice from many interviews -->
